@@ -6,6 +6,9 @@ import android.net.Uri
 import androidx.lifecycle.ViewModel
 import com.example.mixmusic.R
 
+//Esta será la estructura utilizada para almacenar las rutas de lass canciones y sus nombres
+//En el caso de las canciones cargadas desde el proyecto se utiliza resId y las cargadas desde el movil
+//soundUri
 data class SoundSlot(
     val name: String,
     val soundUri: Uri? = null,
@@ -13,22 +16,24 @@ data class SoundSlot(
     var player: MediaPlayer? = null
 )
 
+//En esta clase no hace falta anadir nada mas que el condicional y cambiar los resId
 class MusicViewModel : ViewModel() {
 
+    //cambiar resId por la ruta interna del proyecto de dichos archivos
     val fixedTracks = mutableListOf(
-        SoundSlot("Tema 1", null, R.raw.stranger),
-        SoundSlot("Tema 2", null, R.raw.uplifting)
+        SoundSlot("Tema 1", null, 0),
+        SoundSlot("Tema 2", null, 0)
     )
 
     val userTracks = mutableListOf<SoundSlot>()
 
     fun togglePlay(soundSlot: SoundSlot, context: Context) {
+
         if (soundSlot.player == null) {
-            if (soundSlot.soundUri != null) {
-                soundSlot.player = MediaPlayer.create(context, soundSlot.soundUri)
-            } else if (soundSlot.resId != null) {
-                soundSlot.player = MediaPlayer.create(context, soundSlot.resId)
-            }
+            //Aqui hay que hacer un condicional si el soundUri es diferente a nulo
+            //soundSlot.player = MediaPlayer.create(context, soundSlot.soundUri)
+            // si no:
+            //soundSlot.player = MediaPlayer.create(context, soundSlot.resId)
         }
 
         if (soundSlot.player == null) return
