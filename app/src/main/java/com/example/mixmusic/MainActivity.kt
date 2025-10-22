@@ -1,0 +1,23 @@
+package com.example.mixmusic
+
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
+import com.example.mixmusic.navigation.MainScreen
+import com.example.mixmusic.screen.MixScreen
+import com.example.mixmusic.ui.theme.MiPortafolioDeProyectosTheme
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContent {
+            MiPortafolioDeProyectosTheme {
+                MainScreen()
+                }
+            }
+        }
+    }
+
+
