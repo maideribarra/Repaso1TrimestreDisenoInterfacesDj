@@ -29,11 +29,9 @@ Vuestra tarea es que la **interfaz gráfica** se parezca a las capturas de panta
 ---
 ### Capturas de la app
 
-![Vista principal](assetsDj/ventana1.jpg)  
-*Vista de la pantalla principal con canciones fijas y móviles.*
+<img src="assetsDj/ventana1.jpg" alt="Vista principal" width="50%">
 
-![Selección de canción](assetsDj/ventana2.jpg)  
-*Pantalla para seleccionar canciones desde el móvil.*
+<img src="assetsDj/ventana2.jpg" alt="Vista principal" width="50%">
 
 ---
 
