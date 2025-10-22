@@ -29,9 +29,11 @@ Vuestra tarea es que la **interfaz gráfica** se parezca a las capturas de panta
 ---
 ### Capturas de la app
 
-<img src="assetsDj/ventana1.jpg" alt="Vista principal" width="50%">
+<img src="assetsDj/ventana1.jpg" alt="Vista principal" width="25%">
 
-<img src="assetsDj/ventana2.jpg" alt="Vista principal" width="50%">
+---
+
+<img src="assetsDj/ventana2.jpg" alt="Vista principal" width="25%">
 
 ---
 
