@@ -27,6 +27,15 @@ Vuestra tarea es que la **interfaz gráfica** se parezca a las capturas de panta
 - Ventana para cargar canciones desde el movil.
 
 ---
+### Capturas de la app
+
+![Vista principal](assetsDj/ventana1.jpg)  
+*Vista de la pantalla principal con canciones fijas y móviles.*
+
+![Selección de canción](assetsDj/ventana2.jpg)  
+*Pantalla para seleccionar canciones desde el móvil.*
+
+---
 
 ## Estructura de proyecto
 
